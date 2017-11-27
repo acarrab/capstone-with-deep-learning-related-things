@@ -1,0 +1,29 @@
+<h1 class='page-heading'>Nvidia Project Home Page</h1>
+<div class="row">
+  <div class="col-md-12">
+    Github: <a href="https://github.com/acarrab/capstone-with-deep-learning-related-things" target="_blank" >https://github.com/acarrab/capstone-with-deep-learning-related-things</a><br/>
+    Slack: <a href="https://nvidiaorg.slack.com" target="_blank">nvidiaorg.slack.com</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" style="margin-top: 10px;">
+    <p>We should be able to get away with not having a db for this site. It's mainly just to display Tensorflow projects which are external to the site. <br>Not having a DB makes the site much simpler and if we do end up deploying this somewhere (AWS or a Clemson server) it's less setup and easier to migrate and maintain.</p>
+  </div>
+</div>
+
+<h3>To-Do:</h3>
+<ul>
+  <li><s>Fix JS bug on picture Picker</s></li>
+  <li><s>subprocess for jupyter</s></li>
+  <li>Upload to Github</li>
+  <!-- I think having a model that just returns the 3 different images would be more complex than what we need bc then we have to worry about a database. If we need models for something else in the future or if it would really help simplify then we could consider adding a db and models -->
+  <li>System for displaying images in Picker - Collect all images ending with '-bw' and return image name with '-originial' and '-generated'</li>
+  <li>Should probs have nvidia logo somewhere in the header or footer</li>
+</ul>
+<span>Future pages</span>
+<ul>
+  <li>Team page</li>
+  <li>Server specs - hardware &amp; software</li>
+  <li>Full project description / mission statement</li>
+</ul>
+<%= render 'shared/image_grid' %>

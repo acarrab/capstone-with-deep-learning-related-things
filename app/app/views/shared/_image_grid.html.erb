@@ -1,0 +1,14 @@
+<div class="row">
+  <% Dir.glob(Rails.root.to_s + '/public/images/**/*').each do |image| %>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <%= image_tag image.split('/').last %>
+        
+        <!-- We can specify if we want to link to the image -->
+        <% if try(:link) %>
+          <a href="#">link to classifier</a>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

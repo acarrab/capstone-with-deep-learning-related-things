@@ -1,0 +1,47 @@
+<div class="page-header">
+  <h1>Pick the Original Picture</h1>
+</div>
+<!-- Probably want additional/different feedback for picking the correct image, if you click on the correct image every time it looks like the green border just appears on whatever image you initially click -->
+
+<!-- TODO: make this a partial -->
+<div class="row picture-picker-row" id="picture-picker-1">
+  <div class="col-md-4 black-and-white">
+    <div class="image-container">
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    <!-- black and white -->
+  </div>
+  <div class="col-md-4">
+    <div class="image-container original" value='1'>
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    original
+  </div>
+  <div class="col-md-4">
+    <div class="image-container generated" value='1'>
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    <!-- generated -->
+  </div>
+</div>
+
+<div class="row picture-picker-row" id="picture-picker-2">
+  <div class="col-md-4 black-and-white">
+    <div class="image-container">
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    <!-- black and white -->
+  </div>
+  <div class="col-md-4">
+    <div class="image-container original" value='2'>
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    <!-- original -->
+  </div>
+  <div class="col-md-4">
+    <div class="image-container generated" value='2'>
+      <%= image_tag 'piano.jpg', width: '100%' %>
+    </div>
+    <!-- generated -->
+  </div>
+</div>
